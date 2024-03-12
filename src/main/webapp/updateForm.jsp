@@ -61,19 +61,19 @@
       <form method="get" action="./controller/updateRecord">
         <table>
           <tr>
-            <th>SID</th>
+            <th>Student ID</th>
             <td><input type="text" readonly="readonly" name='sid' value='${student.sid }'/></td>
           </tr>
           <tr>
-            <th>SNAME</th>
+            <th>Student Name</th>
             <td><input type="text" name='sname' value='${student.sname }'/></td>
           </tr>
           <tr>
-            <th>SAGE</th>
+            <th>Student Age</th>
             <td><input type="text" name='sage' value='${student.sage }'/></td>
           </tr>
           <tr>
-            <th>SADDRESS</th>
+            <th>Student Address</th>
             <td><input type="text" name='saddr' value='${student.saddress }'/></td>
           </tr>
           <tr>
