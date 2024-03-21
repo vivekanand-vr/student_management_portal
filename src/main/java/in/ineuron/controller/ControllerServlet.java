@@ -44,11 +44,13 @@ public class ControllerServlet extends HttpServlet {
 			String sage = request.getParameter("sage");
 			String sname = request.getParameter("sname");
 			String saddr = request.getParameter("saddr");
+			String course = request.getParameter("course");
 
 			Student student = new Student();
 			student.setSname(sname);
 			student.setSage(Integer.parseInt(sage));
 			student.setSaddress(saddr);
+			student.setCourse(course);
 
 			String status = stdService.addStudent(student);
 			RequestDispatcher rd = null;
@@ -95,12 +97,14 @@ public class ControllerServlet extends HttpServlet {
 			String sname = request.getParameter("sname");
 			String sage = request.getParameter("sage");
 			String saddr = request.getParameter("saddr");
+			String course = request.getParameter("course");
 
 			Student student = new Student();
 			student.setSid(Integer.parseInt(sid));
 			student.setSaddress(saddr);
 			student.setSname(sname);
 			student.setSage(Integer.parseInt(sage));
+			student.setCourse(course);
 
 			String status = stdService.updateStudent(student);
 			RequestDispatcher rd = null;

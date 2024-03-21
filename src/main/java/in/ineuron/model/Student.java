@@ -17,6 +17,16 @@ public class Student implements Serializable {
 	private Integer sid;
 	private String sname;
 	private Integer sage;
+	private String course;
+	
+	public String getCourse() {
+		return course;
+	}
+
+	public void setCourse(String course) {
+		this.course = course;
+	}
+
 	private String saddress;
 
 	public Integer getSid() {
@@ -53,7 +63,7 @@ public class Student implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Student [sid=" + sid + ", sname=" + sname + ", sage=" + sage + ", saddress=" + saddress + "]";
+		return "Student [sid=" + sid + ", sname=" + sname + ", sage=" + sage + ",scourse=" + course + ", saddress=" + saddress + "]";
 	}
 
 }

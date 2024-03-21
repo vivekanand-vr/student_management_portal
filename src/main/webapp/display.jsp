@@ -61,12 +61,14 @@
           <th>NAME</th>
           <th>AGE</th>
           <th>ADDRESS</th>
+          <th>COURSE</th>
         </tr>
         <tr>
           <td>${student.sid}</td>
           <td>${student.sname}</td>
           <td>${student.sage}</td>
           <td>${student.saddress}</td>
+          <td>${student.course}</td>
         </tr> 
       </table>
     </c:when>

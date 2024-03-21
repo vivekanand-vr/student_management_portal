@@ -60,22 +60,32 @@
     <c:when test="${student ne null || !empty student}">
       <form method="get" action="./controller/updateRecord">
         <table>
+        
           <tr>
             <th>Student ID</th>
             <td><input type="text" readonly="readonly" name='sid' value='${student.sid }'/></td>
           </tr>
+          
           <tr>
             <th>Student Name</th>
             <td><input type="text" name='sname' value='${student.sname }'/></td>
           </tr>
+          
           <tr>
             <th>Student Age</th>
             <td><input type="text" name='sage' value='${student.sage }'/></td>
           </tr>
+          
           <tr>
             <th>Student Address</th>
             <td><input type="text" name='saddr' value='${student.saddress }'/></td>
           </tr>
+          
+          <tr>
+            <th>Course Selected</th>
+            <td><input type="text" name='saddr' value='${student.course }'/></td>
+          </tr>
+          
           <tr>
             <th></th>
             <td><input type="submit" value='Update'/></td>
